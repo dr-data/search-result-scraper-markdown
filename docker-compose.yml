@@ -21,7 +21,7 @@ services:
     networks:
       - default
     ports:
-      - "8080:8080"
+      - "8888:8888"
     volumes:
       - ./searxng:/etc/searxng:rw
 
@@ -32,7 +32,7 @@ services:
     networks:
       - default
     ports:
-      - "3000:3000"
+      - "3040:3040"
     environment:
       - TOKEN=your_browserless_token_here  # Replace with your actual token
       - MAX_CONCURRENT_SESSIONS=10
